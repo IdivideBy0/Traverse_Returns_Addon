@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="Traverse_Returns_Addon.exe" version="1.0.0.10" publicKeyToken="3d354666a7bdd9ee" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Traverse_Returns_Addon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Traverse_Returns_Addon.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ADODB.dll" size="110592">
+      <assemblyIdentity name="ADODB" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>o/V93eadQXHNnFDbbFfni9zgjeg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.Common.dll" size="3624960">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>TCa6/v0zknUObMTqkvat7Gcs7tg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.ProcessingObjectModel.dll" size="49152">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>A4Q18YFO9r8OgPwCGkHedpTHMj8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="339968">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hhj8Lwl+aaUPoriznwETq8lTEuQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Traverse_Returns_Addon.exe" size="1093632">
+      <assemblyIdentity name="Traverse_Returns_Addon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oUtqs9EpAGasdYsBXjowdyTkYL0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Traverse_Returns_Addon.exe.config" size="403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uKTUACXQVigTdOxGmkPpAL02Ys8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PRP\Mike.Murray" issuerKeyHash="4bbd5dcc5eb4435f7e99d7f990feb5e5a5bda994" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>XWki30On8K63SYVZ2xCMdUHmMoI=</DigestValue></Reference></SignedInfo><SignatureValue>nFrovKlg7B5zDDy5XhnKP6M3ls46GIMNZkiAuauzQTK4z5q0ljnEuCMH8UzqNnf6cRlhckY3DcshtoVWLQv+IEpPWEU/DflfNhrO73u/W69W2cVE8Cjkrl0BbD4KGXNqA/LEpSmZjU7jCN0lc88STgWI45y9wdNAECZ23o83Zdo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0WXb3RDh9SV4KBxPRntfO8Zx5FxfQDVapzYAFUlghtXbACDHv9QOhMLlusQkQb0ENlCdeSOC8ce/Yw1Z5tOMBr2UmlYR7d7ifzzyE2gKAMGjA4r7+2FAeDPxJV48vVq68Bjk/4UrI8DIYisYYB14IiwPuum6qiZb5m8yGkVSQ/M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8232e641758c10db598549b7aef0a743df22695d" Description="" Url=""><as:assemblyIdentity name="Traverse_Returns_Addon.exe" version="1.0.0.10" publicKeyToken="3d354666a7bdd9ee" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PRP\Mike.Murray</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>5CKd9BPSQdKJ+SZK98e4ril+lxQ=</DigestValue></Reference></SignedInfo><SignatureValue>lW5KpfVzaBFWmbY/Q3sIhXfNWLYRCZXdKrgU6dAqvbES+CzPE6ygn4hM0jtNwka6Imm4/koIvls8SNFFlQvRYa37mH5q8gjXjG9xxk08NeLf7RRfdKYgLQm2AfF+wvIyRVngyeDQjfRreSWZJn5pCrhpyxIakPq3/ouVcB6bKic=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0WXb3RDh9SV4KBxPRntfO8Zx5FxfQDVapzYAFUlghtXbACDHv9QOhMLlusQkQb0ENlCdeSOC8ce/Yw1Z5tOMBr2UmlYR7d7ifzzyE2gKAMGjA4r7+2FAeDPxJV48vVq68Bjk/4UrI8DIYisYYB14IiwPuum6qiZb5m8yGkVSQ/M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQHW1xq7okRr5MYcTNoI08BDANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4AUABSAFAAXABNAGkAawBlAC4ATQB1AHIAcgBhAHkwHhcNMTEwOTE2MTkzNjUwWhcNMTIwOTE2MDEzNjUwWjApMScwJQYDVQQDHh4AUABSAFAAXABNAGkAawBlAC4ATQB1AHIAcgBhAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANFl290Q4fUleCgcT0Z7XzvGceRcX0A1Wqc2ABVJYIbV2wAgx7/UDoTC5brEJEG9BDZQnXkjgvHHv2MNWebTjAa9lJpWEe3e4n888hNoCgDBowOK+/thQHgz8SVePL1auvAY5P+FKyPAyGIrGGAdeCIsD7rpuqomW+ZvMhpFUkPzAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEARfLas4Q01KTqhqy11MJgG7tNKIrFO7o5xOMkYBBqepEeC3bvs+t1GQ/JUvzPbH8zgX9GrkT35zW8JqmdKDhmWla51iQ1xVoZS7aXkMAJrB7OyjIcidHRU4+tKrws7rYZ4spdyfGik1dCbzTgW0AtSMRbi54IQYrUdvE5Vi1EZiA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

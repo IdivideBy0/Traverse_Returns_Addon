@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="Traverse_Returns_Addon.Properties.Settings.PRPConnStr"
+            connectionString="Data Source = PRPSQL1; Initial Catalog = PRP; Integrated Security = SSPI"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+</configuration>

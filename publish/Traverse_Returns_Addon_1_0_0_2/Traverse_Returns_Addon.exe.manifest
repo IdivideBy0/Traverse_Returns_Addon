@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="Traverse_Returns_Addon.exe" version="1.0.0.2" publicKeyToken="ffefece9dea44d02" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Traverse_Returns_Addon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Traverse_Returns_Addon.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Traverse_Returns_Addon.exe" size="413696">
+      <assemblyIdentity name="Traverse_Returns_Addon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5TVm08T/crgJh/fOTC5JYRy31Uc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Traverse_Returns_Addon.exe.config" size="403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>uKTUACXQVigTdOxGmkPpAL02Ys8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PRP\mike.murray" issuerKeyHash="ef7fb83c10a094571e54cbc523c7e0aa2e63743e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mtQ15ly4awldRoB/VNbgM+XSzmk=</DigestValue></Reference></SignedInfo><SignatureValue>gXfapA6WZ1OzxcXKyGz9iYVhpif36lOMTdbl+Gnh2JD0ljqGZ7GTppth2oe4oMYBbLKpsLIUEx5e7T+3f3qVP0h6Fa8SX6RsPvOQ4seRI9PUELR4i76Hgc0w4G6l5NIV8afiV48NEP6XnOslA7EDZK8Ycd3rb+3cP6saph7Zres=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vHLoAmBBiIFcjzz9lLO4ym8f1irALCX1YgTFiEWG2FQHuCc98/EAsuiMWcn7DDo38FGdUVrd9mlna9/JfpdcKMPVt+uotuVVHrmn7augNXRcA1hQVXUS0UNCsdYRU01jU3pyW5vTy5VLMWPE40EngGbgsAz4DoOJ71/OBTa0KYs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="69ced2e533e0d6547f80465d096bb85ce635d49a" Description="" Url=""><as:assemblyIdentity name="Traverse_Returns_Addon.exe" version="1.0.0.2" publicKeyToken="ffefece9dea44d02" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PRP\mike.murray</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mzZJWorg8fgRFmXetzyyD4EhmTU=</DigestValue></Reference></SignedInfo><SignatureValue>GYWSwiBoxG8jKdb7VeEbHi5gMbHGHD/2gHhDTcyZjydSyBtvIGePoktN7RwZLMpnx+qzi2FxBtSautM+qQ8UvTkFVuSN6fSm/1UpS9MGn5reRq19yzhv2H6t2rNPfmlSbqtuY4RkcX5mpv7QmXvCOcXYi7L70woEl4hN+bdvx5w=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vHLoAmBBiIFcjzz9lLO4ym8f1irALCX1YgTFiEWG2FQHuCc98/EAsuiMWcn7DDo38FGdUVrd9mlna9/JfpdcKMPVt+uotuVVHrmn7augNXRcA1hQVXUS0UNCsdYRU01jU3pyW5vTy5VLMWPE40EngGbgsAz4DoOJ71/OBTa0KYs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQOwGMCBUeGJZMMuliCoSV0TANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4AUABSAFAAXABtAGkAawBlAC4AbQB1AHIAcgBhAHkwHhcNMDkxMDIxMjIzMjU3WhcNMTAxMDIyMDQzMjU3WjApMScwJQYDVQQDHh4AUABSAFAAXABtAGkAawBlAC4AbQB1AHIAcgBhAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALxy6AJgQYiBXI88/ZSzuMpvH9YqwCwl9WIExYhFhthUB7gnPfPxALLojFnJ+ww6N/BRnVFa3fZpZ2vfyX6XXCjD1bfrqLblVR65p+2roDV0XANYUFV1EtFDQrHWEVNNY1N6club08uVSzFjxONBJ4Bm4LAM+A6Die9fzgU2tCmLAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAbn75Oi2q1SulCKypC4EIk+msfI5bamA7x+bCMXKV/1Ljwx0I1BJzDaYLDdBruy8NRF1wDESLgoZlw7ZmOP+qm/pjZuSfGSudS6MxyDW63WOCVn7lEe3cWBAznnCRVXokOmi1hBKcdNt0227nhzdqWaWzoQ8KgzqQ1azmYBlWmKQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

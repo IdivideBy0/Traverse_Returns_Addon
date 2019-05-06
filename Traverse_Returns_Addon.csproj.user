@@ -1,0 +1,18 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\PRPSQL1\TravApp\|\\PRPSQL1\TravApp\Returns\|c:\temp\travapp\returns\|publish\</PublishUrlHistory>
+    <InstallUrlHistory>\\PRPSQL1\TravApp\|\\PRPSQL1\TravApp\TravReturns\</InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <ApplicationRevision>10</ApplicationRevision>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ReferencePath>C:\Program Files\Common Files\Business Objects\2.7\Managed\</ReferencePath>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>
