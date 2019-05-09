@@ -8200,6 +8200,10 @@ namespace Traverse_Returns_Addon {
             
             private global::System.Data.DataColumn columnRep1Id;
             
+            private global::System.Data.DataColumn columnCreationDate1;
+            
+            private global::System.Data.DataColumn columnReceivedDate1;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public tblInPRPReturnsHistDataTable() {
                 this.TableName = "tblInPRPReturnsHist";
@@ -8490,6 +8494,20 @@ namespace Traverse_Returns_Addon {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn CreationDate1Column {
+                get {
+                    return this.columnCreationDate1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn ReceivedDate1Column {
+                get {
+                    return this.columnReceivedDate1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -8555,7 +8573,9 @@ namespace Traverse_Returns_Addon {
                         decimal UnitPrice, 
                         decimal SubTotal, 
                         decimal RestockingFee, 
-                        string Rep1Id) {
+                        string Rep1Id, 
+                        System.DateTime CreationDate1, 
+                        System.DateTime ReceivedDate1) {
                 tblInPRPReturnsHistRow rowtblInPRPReturnsHistRow = ((tblInPRPReturnsHistRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ReturnAuthNum,
@@ -8594,7 +8614,9 @@ namespace Traverse_Returns_Addon {
                         UnitPrice,
                         SubTotal,
                         RestockingFee,
-                        Rep1Id};
+                        Rep1Id,
+                        CreationDate1,
+                        ReceivedDate1};
                 rowtblInPRPReturnsHistRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtblInPRPReturnsHistRow);
                 return rowtblInPRPReturnsHistRow;
@@ -8663,6 +8685,8 @@ namespace Traverse_Returns_Addon {
                 this.columnSubTotal = base.Columns["SubTotal"];
                 this.columnRestockingFee = base.Columns["RestockingFee"];
                 this.columnRep1Id = base.Columns["Rep1Id"];
+                this.columnCreationDate1 = base.Columns["CreationDate1"];
+                this.columnReceivedDate1 = base.Columns["ReceivedDate1"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8741,6 +8765,10 @@ namespace Traverse_Returns_Addon {
                 base.Columns.Add(this.columnRestockingFee);
                 this.columnRep1Id = new global::System.Data.DataColumn("Rep1Id", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRep1Id);
+                this.columnCreationDate1 = new global::System.Data.DataColumn("CreationDate1", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreationDate1);
+                this.columnReceivedDate1 = new global::System.Data.DataColumn("ReceivedDate1", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReceivedDate1);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnReturnAuthNum,
                                 this.columnEntryNum}, true));
@@ -8782,6 +8810,8 @@ namespace Traverse_Returns_Addon {
                 this.columnReceivedDate.MaxLength = 50;
                 this.columnReceivedBy.MaxLength = 50;
                 this.columnRep1Id.MaxLength = 3;
+                this.columnCreationDate1.Caption = "CreationDate";
+                this.columnReceivedDate1.Caption = "ReceivedDate";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -17282,6 +17312,36 @@ namespace Traverse_Returns_Addon {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public System.DateTime CreationDate1 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletblInPRPReturnsHist.CreationDate1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CreationDate1\' in table \'tblInPRPReturnsHist\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblInPRPReturnsHist.CreationDate1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public System.DateTime ReceivedDate1 {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletblInPRPReturnsHist.ReceivedDate1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ReceivedDate1\' in table \'tblInPRPReturnsHist\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletblInPRPReturnsHist.ReceivedDate1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IsAddress2Null() {
                 return this.IsNull(this.tabletblInPRPReturnsHist.Address2Column);
             }
@@ -17519,6 +17579,26 @@ namespace Traverse_Returns_Addon {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SetRep1IdNull() {
                 this[this.tabletblInPRPReturnsHist.Rep1IdColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsCreationDate1Null() {
+                return this.IsNull(this.tabletblInPRPReturnsHist.CreationDate1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetCreationDate1Null() {
+                this[this.tabletblInPRPReturnsHist.CreationDate1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool IsReceivedDate1Null() {
+                return this.IsNull(this.tabletblInPRPReturnsHist.ReceivedDate1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void SetReceivedDate1Null() {
+                this[this.tabletblInPRPReturnsHist.ReceivedDate1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -19607,10 +19687,8 @@ SELECT ReturnAuthNum, CustID, CustName, Contact, Phone, Address1, Address2, City
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CompletedYn", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 0, 0, "CompletedYn", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT Address1, Address2, City, CompletedYn, Contact, CustID, CustName, InvoiceN" +
-                "um, Memo, PackingListNum, Phone, Region, Rep1Id, ReplOrder, ReturnAuthNum, Trans" +
-                "Id, UserID, WrkStnID, Zip FROM tblInPRPReturnsHeader WHERE (ReturnAuthNum = @Ret" +
-                "urnAuthNum)";
+            this._commandCollection[2].CommandText = "SELECT        Memo\r\nFROM            tblInPRPReturnsHeader\r\nWHERE        (ReturnAu" +
+                "thNum = @ReturnAuthNum)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReturnAuthNum", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ReturnAuthNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -20885,7 +20963,6 @@ WHERE        (SrchID = 'frmInPRPReturns')";
             tableMapping.ColumnMappings.Add("ReplOrder", "ReplOrder");
             tableMapping.ColumnMappings.Add("Memo", "Memo");
             tableMapping.ColumnMappings.Add("CompletedYn", "CompletedYn");
-            tableMapping.ColumnMappings.Add("CreationDate", "CreationDate");
             tableMapping.ColumnMappings.Add("WrkStnID", "WrkStnID");
             tableMapping.ColumnMappings.Add("UserID", "UserID");
             tableMapping.ColumnMappings.Add("TransId", "TransId");
@@ -20898,7 +20975,6 @@ WHERE        (SrchID = 'frmInPRPReturns')";
             tableMapping.ColumnMappings.Add("ReturnedPartId", "ReturnedPartId");
             tableMapping.ColumnMappings.Add("ReturnedCode", "ReturnedCode");
             tableMapping.ColumnMappings.Add("ReturnedQty", "ReturnedQty");
-            tableMapping.ColumnMappings.Add("ReceivedDate", "ReceivedDate");
             tableMapping.ColumnMappings.Add("ReceivedBy", "ReceivedBy");
             tableMapping.ColumnMappings.Add("TotalPrice", "TotalPrice");
             tableMapping.ColumnMappings.Add("DeterminationCode", "DeterminationCode");
@@ -20906,6 +20982,8 @@ WHERE        (SrchID = 'frmInPRPReturns')";
             tableMapping.ColumnMappings.Add("SubTotal", "SubTotal");
             tableMapping.ColumnMappings.Add("RestockingFee", "RestockingFee");
             tableMapping.ColumnMappings.Add("Rep1Id", "Rep1Id");
+            tableMapping.ColumnMappings.Add("CreationDate", "CreationDate1");
+            tableMapping.ColumnMappings.Add("ReceivedDate", "ReceivedDate1");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -20923,25 +21001,25 @@ WHERE        (SrchID = 'frmInPRPReturns')";
             this._commandCollection[0].CommandText = "SELECT        tblInPRPReturnsHeader.ReturnAuthNum, tblInPRPReturnsHeader.CustID, " +
                 "tblInPRPReturnsHeader.CustName, tblInPRPReturnsHeader.Contact, \r\n               " +
                 "          tblInPRPReturnsHeader.Phone, tblInPRPReturnsHeader.Address1, tblInPRPR" +
-                "eturnsHeader.Address2, tblInPRPReturnsHeader.City, \r\n                         tb" +
-                "lInPRPReturnsHeader.Region, tblInPRPReturnsHeader.Country, tblInPRPReturnsHeader" +
-                ".Zip, tblInPRPReturnsHeader.InvoiceNum, \r\n                         tblInPRPRetur" +
-                "nsHeader.PackingListNum, tblInPRPReturnsHeader.ReplOrder, tblInPRPReturnsHeader." +
-                "Memo, tblInPRPReturnsHeader.CompletedYn, \r\n                         tblInPRPRetu" +
-                "rnsHeader.CreationDate, tblInPRPReturnsHeader.WrkStnID, tblInPRPReturnsHeader.Us" +
-                "erID, tblInPRPReturnsHeader.TransId, \r\n                         tblInPRPReturnsD" +
-                "etail.EntryNum, tblInPRPReturnsDetail.ReturningItemID, tblInPRPReturnsDetail.Ret" +
-                "urningQty, tblInPRPReturnsDetail.ReturningCode, \r\n                         tblIn" +
-                "PRPReturnsDetail.ExplanationText, tblInPRPReturnsDetail.RestockingFeeYn, tblInPR" +
-                "PReturnsDetail.ReturnedPartId, \r\n                         tblInPRPReturnsDetail." +
-                "ReturnedCode, tblInPRPReturnsDetail.ReturnedQty, tblInPRPReturnsDetail.ReceivedD" +
-                "ate, tblInPRPReturnsDetail.ReceivedBy, \r\n                         tblInPRPReturn" +
-                "sDetail.UnitPrice, tblInPRPReturnsDetail.TotalPrice, tblInPRPReturnsDetail.Deter" +
-                "minationCode, tblInPRPReturnsDetail.SubTotal, \r\n                         tblInPR" +
-                "PReturnsDetail.RestockingFee, tblInPRPReturnsHeader.Rep1Id\r\nFROM            tblI" +
-                "nPRPReturnsHeader INNER JOIN\r\n                         tblInPRPReturnsDetail ON " +
-                "tblInPRPReturnsHeader.ReturnAuthNum = tblInPRPReturnsDetail.ReturnAuthNum\r\nWHERE" +
-                "        (tblInPRPReturnsHeader.ReturnAuthNum = @ReturnAuthNum)";
+                "eturnsHeader.Address2, tblInPRPReturnsHeader.City, tblInPRPReturnsHeader.Region," +
+                " \r\n                         tblInPRPReturnsHeader.Country, tblInPRPReturnsHeader" +
+                ".Zip, tblInPRPReturnsHeader.InvoiceNum, tblInPRPReturnsHeader.PackingListNum, \r\n" +
+                "                         tblInPRPReturnsHeader.ReplOrder, tblInPRPReturnsHeader." +
+                "Memo, tblInPRPReturnsHeader.CompletedYn, tblInPRPReturnsHeader.CreationDate, \r\n " +
+                "                        tblInPRPReturnsHeader.WrkStnID, tblInPRPReturnsHeader.Us" +
+                "erID, tblInPRPReturnsHeader.TransId, tblInPRPReturnsDetail.EntryNum, \r\n         " +
+                "                tblInPRPReturnsDetail.ReturningItemID, tblInPRPReturnsDetail.Ret" +
+                "urningQty, tblInPRPReturnsDetail.ReturningCode, tblInPRPReturnsDetail.Explanatio" +
+                "nText, \r\n                         tblInPRPReturnsDetail.RestockingFeeYn, tblInPR" +
+                "PReturnsDetail.ReturnedPartId, tblInPRPReturnsDetail.ReturnedCode, tblInPRPRetur" +
+                "nsDetail.ReturnedQty, \r\n                         tblInPRPReturnsDetail.ReceivedD" +
+                "ate, tblInPRPReturnsDetail.ReceivedBy, tblInPRPReturnsDetail.UnitPrice, tblInPRP" +
+                "ReturnsDetail.TotalPrice, \r\n                         tblInPRPReturnsDetail.Deter" +
+                "minationCode, tblInPRPReturnsDetail.SubTotal, tblInPRPReturnsDetail.RestockingFe" +
+                "e, tblInPRPReturnsHeader.Rep1Id\r\nFROM            tblInPRPReturnsHeader INNER JOI" +
+                "N\r\n                         tblInPRPReturnsDetail ON tblInPRPReturnsHeader.Retur" +
+                "nAuthNum = tblInPRPReturnsDetail.ReturnAuthNum\r\nWHERE        (tblInPRPReturnsHea" +
+                "der.ReturnAuthNum = @ReturnAuthNum)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReturnAuthNum", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ReturnAuthNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -21281,8 +21359,8 @@ FROM            tblInPRPReturnsDetail";
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReturnAuthNum", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ReturnAuthNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT        SUM(TotalPrice) \r\nFROM            tblInPRPReturnsDetail\r\nWHERE     " +
-                "   (ReturnAuthNum = @ReturnAuthNum)";
+            this._commandCollection[3].CommandText = "SELECT        SUM(TotalPrice) AS Expr1\r\nFROM            tblInPRPReturnsDetail\r\nWH" +
+                "ERE        (ReturnAuthNum = @ReturnAuthNum)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReturnAuthNum", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, "ReturnAuthNum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -22018,7 +22096,7 @@ FROM            tblInPRPReturnsDetail";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual object SubTotal(string ReturnAuthNum) {
+        public virtual global::System.Nullable<decimal> SubTotal(string ReturnAuthNum) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((ReturnAuthNum == null)) {
                 throw new global::System.ArgumentNullException("ReturnAuthNum");
@@ -22042,10 +22120,10 @@ FROM            tblInPRPReturnsDetail";
             }
             if (((returnValue == null) 
                         || (returnValue.GetType() == typeof(global::System.DBNull)))) {
-                return null;
+                return new global::System.Nullable<decimal>();
             }
             else {
-                return ((object)(returnValue));
+                return new global::System.Nullable<decimal>(((decimal)(returnValue)));
             }
         }
     }

@@ -34,29 +34,29 @@ namespace Traverse_Returns_Addon
             System.Windows.Forms.Label returningQtyLabel;
             System.Windows.Forms.Label entryNumLabel1;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReturns));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label14 = new System.Windows.Forms.Label();
@@ -197,6 +197,18 @@ namespace Traverse_Returns_Addon
             this.cboReturnedItemID = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ReturnAuthNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EntryNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnedPartIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnedQtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReceivedBy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReceivedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.determinationCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restockingFeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Solution = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.totalCreditDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.creditAppliedToCCYnDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CreditCard = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -228,18 +240,6 @@ namespace Traverse_Returns_Addon
             this.btnRcv = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.ReturnAuthNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EntryNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnedPartIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnedQtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReceivedBy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReceivedDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.determinationCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subTotalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.restockingFeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Solution = new System.Windows.Forms.DataGridViewTextBoxColumn();
             entryNumLabel = new System.Windows.Forms.Label();
             returningItemIDLabel = new System.Windows.Forms.Label();
             returningQtyLabel = new System.Windows.Forms.Label();
@@ -1044,14 +1044,14 @@ namespace Traverse_Returns_Addon
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.entryNumDataGridViewTextBoxColumn,
@@ -1061,25 +1061,25 @@ namespace Traverse_Returns_Addon
             this.explanationTextDataGridViewTextBoxColumn,
             this.restockingFeeYnDataGridViewCheckBoxColumn});
             this.dataGridView1.DataSource = this.tblInPRPReturnsDetailBindingSource;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(6, 218);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Size = new System.Drawing.Size(701, 75);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
@@ -1087,8 +1087,8 @@ namespace Traverse_Returns_Addon
             // entryNumDataGridViewTextBoxColumn
             // 
             this.entryNumDataGridViewTextBoxColumn.DataPropertyName = "EntryNum";
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.Silver;
-            this.entryNumDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
+            this.entryNumDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.entryNumDataGridViewTextBoxColumn.HeaderText = "EntryNum";
             this.entryNumDataGridViewTextBoxColumn.Name = "entryNumDataGridViewTextBoxColumn";
             this.entryNumDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1096,8 +1096,8 @@ namespace Traverse_Returns_Addon
             // returningItemIDDataGridViewTextBoxColumn
             // 
             this.returningItemIDDataGridViewTextBoxColumn.DataPropertyName = "ReturningItemID";
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.Silver;
-            this.returningItemIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Silver;
+            this.returningItemIDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.returningItemIDDataGridViewTextBoxColumn.HeaderText = "ReturningItemID";
             this.returningItemIDDataGridViewTextBoxColumn.Name = "returningItemIDDataGridViewTextBoxColumn";
             this.returningItemIDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1105,8 +1105,8 @@ namespace Traverse_Returns_Addon
             // returningQtyDataGridViewTextBoxColumn
             // 
             this.returningQtyDataGridViewTextBoxColumn.DataPropertyName = "ReturningQty";
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.Silver;
-            this.returningQtyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
+            this.returningQtyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.returningQtyDataGridViewTextBoxColumn.HeaderText = "ReturningQty";
             this.returningQtyDataGridViewTextBoxColumn.Name = "returningQtyDataGridViewTextBoxColumn";
             this.returningQtyDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1114,8 +1114,8 @@ namespace Traverse_Returns_Addon
             // returningCodeDataGridViewTextBoxColumn
             // 
             this.returningCodeDataGridViewTextBoxColumn.DataPropertyName = "ReturningCode";
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.Silver;
-            this.returningCodeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Silver;
+            this.returningCodeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.returningCodeDataGridViewTextBoxColumn.HeaderText = "ReturningCode";
             this.returningCodeDataGridViewTextBoxColumn.Name = "returningCodeDataGridViewTextBoxColumn";
             this.returningCodeDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1130,10 +1130,10 @@ namespace Traverse_Returns_Addon
             // restockingFeeYnDataGridViewCheckBoxColumn
             // 
             this.restockingFeeYnDataGridViewCheckBoxColumn.DataPropertyName = "RestockingFeeYn";
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle43.NullValue = false;
-            this.restockingFeeYnDataGridViewCheckBoxColumn.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.NullValue = false;
+            this.restockingFeeYnDataGridViewCheckBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.restockingFeeYnDataGridViewCheckBoxColumn.HeaderText = "RestockingFeeYn";
             this.restockingFeeYnDataGridViewCheckBoxColumn.Name = "restockingFeeYnDataGridViewCheckBoxColumn";
             this.restockingFeeYnDataGridViewCheckBoxColumn.ReadOnly = true;
@@ -1200,9 +1200,8 @@ namespace Traverse_Returns_Addon
             this.txtSubTotal.BackColor = System.Drawing.Color.Fuchsia;
             this.txtSubTotal.Location = new System.Drawing.Point(9, 80);
             this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(14, 20);
+            this.txtSubTotal.Size = new System.Drawing.Size(71, 20);
             this.txtSubTotal.TabIndex = 66;
-            this.txtSubTotal.Visible = false;
             // 
             // txtRcvdBy
             // 
@@ -1706,14 +1705,14 @@ namespace Traverse_Returns_Addon
             // dataGridView2
             // 
             this.dataGridView2.AutoGenerateColumns = false;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ReturnAuthNum,
@@ -1729,33 +1728,138 @@ namespace Traverse_Returns_Addon
             this.restockingFeeDataGridViewTextBoxColumn,
             this.Solution});
             this.dataGridView2.DataSource = this.tblInPRPReturnsDetailBindingSource;
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle36.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle36.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridView2.Location = new System.Drawing.Point(3, 206);
             this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.dataGridView2.Size = new System.Drawing.Size(702, 87);
             this.dataGridView2.TabIndex = 48;
             this.dataGridView2.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellValueChanged);
             // 
+            // ReturnAuthNum
+            // 
+            this.ReturnAuthNum.DataPropertyName = "ReturnAuthNum";
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Silver;
+            this.ReturnAuthNum.DefaultCellStyle = dataGridViewCellStyle10;
+            this.ReturnAuthNum.HeaderText = "ReturnAuthNum";
+            this.ReturnAuthNum.Name = "ReturnAuthNum";
+            this.ReturnAuthNum.ReadOnly = true;
+            // 
+            // EntryNum
+            // 
+            this.EntryNum.DataPropertyName = "EntryNum";
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Silver;
+            this.EntryNum.DefaultCellStyle = dataGridViewCellStyle11;
+            this.EntryNum.HeaderText = "EntryNum";
+            this.EntryNum.Name = "EntryNum";
+            this.EntryNum.ReadOnly = true;
+            // 
+            // returnedPartIdDataGridViewTextBoxColumn
+            // 
+            this.returnedPartIdDataGridViewTextBoxColumn.DataPropertyName = "ReturnedPartId";
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Silver;
+            this.returnedPartIdDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle12;
+            this.returnedPartIdDataGridViewTextBoxColumn.HeaderText = "ReturnedPartId";
+            this.returnedPartIdDataGridViewTextBoxColumn.Name = "returnedPartIdDataGridViewTextBoxColumn";
+            this.returnedPartIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // returnedQtyDataGridViewTextBoxColumn
+            // 
+            this.returnedQtyDataGridViewTextBoxColumn.DataPropertyName = "ReturnedQty";
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Silver;
+            this.returnedQtyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+            this.returnedQtyDataGridViewTextBoxColumn.HeaderText = "ReturnedQty";
+            this.returnedQtyDataGridViewTextBoxColumn.Name = "returnedQtyDataGridViewTextBoxColumn";
+            this.returnedQtyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // unitPriceDataGridViewTextBoxColumn
+            // 
+            this.unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Silver;
+            this.unitPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            this.unitPriceDataGridViewTextBoxColumn.HeaderText = "UnitPrice";
+            this.unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
+            this.unitPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ReceivedBy
+            // 
+            this.ReceivedBy.DataPropertyName = "ReceivedBy";
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Silver;
+            this.ReceivedBy.DefaultCellStyle = dataGridViewCellStyle15;
+            this.ReceivedBy.HeaderText = "ReceivedBy";
+            this.ReceivedBy.Name = "ReceivedBy";
+            this.ReceivedBy.ReadOnly = true;
+            // 
+            // ReceivedDate
+            // 
+            this.ReceivedDate.DataPropertyName = "ReceivedDate";
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Silver;
+            this.ReceivedDate.DefaultCellStyle = dataGridViewCellStyle16;
+            this.ReceivedDate.HeaderText = "ReceivedDate";
+            this.ReceivedDate.Name = "ReceivedDate";
+            this.ReceivedDate.ReadOnly = true;
+            // 
+            // totalPriceDataGridViewTextBoxColumn
+            // 
+            this.totalPriceDataGridViewTextBoxColumn.DataPropertyName = "TotalPrice";
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Silver;
+            this.totalPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle17;
+            this.totalPriceDataGridViewTextBoxColumn.HeaderText = "TotalPrice";
+            this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
+            this.totalPriceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // determinationCodeDataGridViewTextBoxColumn
+            // 
+            this.determinationCodeDataGridViewTextBoxColumn.DataPropertyName = "DeterminationCode";
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Silver;
+            this.determinationCodeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle18;
+            this.determinationCodeDataGridViewTextBoxColumn.HeaderText = "DeterminationCode";
+            this.determinationCodeDataGridViewTextBoxColumn.Name = "determinationCodeDataGridViewTextBoxColumn";
+            this.determinationCodeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // subTotalDataGridViewTextBoxColumn
+            // 
+            this.subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Silver;
+            this.subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle19;
+            this.subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
+            this.subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
+            this.subTotalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // restockingFeeDataGridViewTextBoxColumn
+            // 
+            this.restockingFeeDataGridViewTextBoxColumn.DataPropertyName = "RestockingFee";
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Silver;
+            this.restockingFeeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle20;
+            this.restockingFeeDataGridViewTextBoxColumn.HeaderText = "RestockingFee";
+            this.restockingFeeDataGridViewTextBoxColumn.Name = "restockingFeeDataGridViewTextBoxColumn";
+            this.restockingFeeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Solution
+            // 
+            this.Solution.DataPropertyName = "Solution";
+            this.Solution.HeaderText = "Solution";
+            this.Solution.Name = "Solution";
+            // 
             // totalCreditDataGridViewTextBoxColumn
             // 
             this.totalCreditDataGridViewTextBoxColumn.DataPropertyName = "TotalCredit";
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.Silver;
-            this.totalCreditDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Silver;
+            this.totalCreditDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle23;
             this.totalCreditDataGridViewTextBoxColumn.HeaderText = "TotalCredit";
             this.totalCreditDataGridViewTextBoxColumn.Name = "totalCreditDataGridViewTextBoxColumn";
             this.totalCreditDataGridViewTextBoxColumn.ReadOnly = true;
@@ -1981,111 +2085,6 @@ namespace Traverse_Returns_Addon
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // ReturnAuthNum
-            // 
-            this.ReturnAuthNum.DataPropertyName = "ReturnAuthNum";
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.Silver;
-            this.ReturnAuthNum.DefaultCellStyle = dataGridViewCellStyle25;
-            this.ReturnAuthNum.HeaderText = "ReturnAuthNum";
-            this.ReturnAuthNum.Name = "ReturnAuthNum";
-            this.ReturnAuthNum.ReadOnly = true;
-            // 
-            // EntryNum
-            // 
-            this.EntryNum.DataPropertyName = "EntryNum";
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.Silver;
-            this.EntryNum.DefaultCellStyle = dataGridViewCellStyle26;
-            this.EntryNum.HeaderText = "EntryNum";
-            this.EntryNum.Name = "EntryNum";
-            this.EntryNum.ReadOnly = true;
-            // 
-            // returnedPartIdDataGridViewTextBoxColumn
-            // 
-            this.returnedPartIdDataGridViewTextBoxColumn.DataPropertyName = "ReturnedPartId";
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.Silver;
-            this.returnedPartIdDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle27;
-            this.returnedPartIdDataGridViewTextBoxColumn.HeaderText = "ReturnedPartId";
-            this.returnedPartIdDataGridViewTextBoxColumn.Name = "returnedPartIdDataGridViewTextBoxColumn";
-            this.returnedPartIdDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // returnedQtyDataGridViewTextBoxColumn
-            // 
-            this.returnedQtyDataGridViewTextBoxColumn.DataPropertyName = "ReturnedQty";
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.Silver;
-            this.returnedQtyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle28;
-            this.returnedQtyDataGridViewTextBoxColumn.HeaderText = "ReturnedQty";
-            this.returnedQtyDataGridViewTextBoxColumn.Name = "returnedQtyDataGridViewTextBoxColumn";
-            this.returnedQtyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // unitPriceDataGridViewTextBoxColumn
-            // 
-            this.unitPriceDataGridViewTextBoxColumn.DataPropertyName = "UnitPrice";
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.Silver;
-            this.unitPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle29;
-            this.unitPriceDataGridViewTextBoxColumn.HeaderText = "UnitPrice";
-            this.unitPriceDataGridViewTextBoxColumn.Name = "unitPriceDataGridViewTextBoxColumn";
-            this.unitPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ReceivedBy
-            // 
-            this.ReceivedBy.DataPropertyName = "ReceivedBy";
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.Silver;
-            this.ReceivedBy.DefaultCellStyle = dataGridViewCellStyle30;
-            this.ReceivedBy.HeaderText = "ReceivedBy";
-            this.ReceivedBy.Name = "ReceivedBy";
-            this.ReceivedBy.ReadOnly = true;
-            // 
-            // ReceivedDate
-            // 
-            this.ReceivedDate.DataPropertyName = "ReceivedDate";
-            dataGridViewCellStyle31.BackColor = System.Drawing.Color.Silver;
-            this.ReceivedDate.DefaultCellStyle = dataGridViewCellStyle31;
-            this.ReceivedDate.HeaderText = "ReceivedDate";
-            this.ReceivedDate.Name = "ReceivedDate";
-            this.ReceivedDate.ReadOnly = true;
-            // 
-            // totalPriceDataGridViewTextBoxColumn
-            // 
-            this.totalPriceDataGridViewTextBoxColumn.DataPropertyName = "TotalPrice";
-            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Silver;
-            this.totalPriceDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle32;
-            this.totalPriceDataGridViewTextBoxColumn.HeaderText = "TotalPrice";
-            this.totalPriceDataGridViewTextBoxColumn.Name = "totalPriceDataGridViewTextBoxColumn";
-            this.totalPriceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // determinationCodeDataGridViewTextBoxColumn
-            // 
-            this.determinationCodeDataGridViewTextBoxColumn.DataPropertyName = "DeterminationCode";
-            dataGridViewCellStyle33.BackColor = System.Drawing.Color.Silver;
-            this.determinationCodeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle33;
-            this.determinationCodeDataGridViewTextBoxColumn.HeaderText = "DeterminationCode";
-            this.determinationCodeDataGridViewTextBoxColumn.Name = "determinationCodeDataGridViewTextBoxColumn";
-            this.determinationCodeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // subTotalDataGridViewTextBoxColumn
-            // 
-            this.subTotalDataGridViewTextBoxColumn.DataPropertyName = "SubTotal";
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.Silver;
-            this.subTotalDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle34;
-            this.subTotalDataGridViewTextBoxColumn.HeaderText = "SubTotal";
-            this.subTotalDataGridViewTextBoxColumn.Name = "subTotalDataGridViewTextBoxColumn";
-            this.subTotalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // restockingFeeDataGridViewTextBoxColumn
-            // 
-            this.restockingFeeDataGridViewTextBoxColumn.DataPropertyName = "RestockingFee";
-            dataGridViewCellStyle35.BackColor = System.Drawing.Color.Silver;
-            this.restockingFeeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle35;
-            this.restockingFeeDataGridViewTextBoxColumn.HeaderText = "RestockingFee";
-            this.restockingFeeDataGridViewTextBoxColumn.Name = "restockingFeeDataGridViewTextBoxColumn";
-            this.restockingFeeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Solution
-            // 
-            this.Solution.DataPropertyName = "Solution";
-            this.Solution.HeaderText = "Solution";
-            this.Solution.Name = "Solution";
             // 
             // frmReturns
             // 

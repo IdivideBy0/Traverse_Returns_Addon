@@ -908,7 +908,7 @@ namespace Traverse_Returns_Addon
             string strSql = "UPDATE tblInPRPReturnsDetail Set ReturnedPartId = @ReturnedPartId " +
 ",ReturnedQty = @ReturnedQty, ReceivedDate = @ReceivedDate, ReceivedBy = @ReceivedBy, UnitPrice = @UnitPrice, TotalPrice = @TotalPrice " +
 ",DeterminationCode = @DeterminationCode, RestockingFee = @RestockingFee, Solution = @Solution " +
-"WHERE EntryNum = '" + @EntryNum + "' AND ReturnAuthNum = @ReturnAuthNum";
+"WHERE EntryNum = @EntryNum AND ReturnAuthNum = @ReturnAuthNum";
 
             SqlCommand UpdateRec = new SqlCommand(strSql, conn);
 
@@ -921,7 +921,7 @@ namespace Traverse_Returns_Addon
             UpdateRec.Parameters.Add("@DeterminationCode", SqlDbType.SmallInt).Value = lblDeterminationCodeNum.Text;
             UpdateRec.Parameters.Add("@RestockingFee", SqlDbType.Decimal).Value = dblRestockFee;
             UpdateRec.Parameters.Add("@Solution", SqlDbType.VarChar, 1000).Value = CleanSQL(strSolution);
-            UpdateRec.Parameters.Add("@EntryNum", SqlDbType.SmallInt).Value = strEntryNum;
+            UpdateRec.Parameters.Add("@EntryNum", SqlDbType.SmallInt).Value = int.Parse(strEntryNum);
             UpdateRec.Parameters.Add("@ReturnAuthNum", SqlDbType.VarChar, 8).Value = cboReturnAuthNum.Text;
             
             UpdateRec.ExecuteNonQuery();
@@ -938,7 +938,7 @@ namespace Traverse_Returns_Addon
             strSql = "Update tblInPRPReturnsDetail Set SubTotal = @SubTotal where ReturnAuthNum = @ReturnAuthNum";
             SqlCommand UpdateSubTotal = new SqlCommand(strSql, conn);
 
-            UpdateSubTotal.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = txtSubTotal.Text;
+            UpdateSubTotal.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = Decimal.Parse(txtSubTotal.Text);
             UpdateSubTotal.Parameters.Add("@ReturnAuthNum", SqlDbType.VarChar, 8).Value = cboReturnAuthNum.Text;
 
             UpdateSubTotal.ExecuteNonQuery();
@@ -1251,7 +1251,7 @@ namespace Traverse_Returns_Addon
                 conn.Open();
                 Complete = new SqlCommand("UPDATE tblInPRPReturnsDetail SET SubTotal = @SubTotal WHERE ReturnAuthNum = @ReturnAuthNum", conn);
 
-                Complete.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = txtSubTotal.Text;
+                Complete.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = Decimal.Parse(txtSubTotal.Text);
                 Complete.Parameters.Add("@ReturnAuthNum", SqlDbType.VarChar, 8).Value = cboReturnAuthNum.Text;
                 
                 Complete.ExecuteNonQuery();
@@ -1626,7 +1626,7 @@ namespace Traverse_Returns_Addon
             dataGridView2.Rows[rownum].Cells[3].Value = 0;
             dataGridView2.Rows[rownum].Cells[4].Value = 0;
             dataGridView2.Rows[rownum].Cells[5].Value = String.Empty;
-            dataGridView2.Rows[rownum].Cells[6].Value = 0;
+            dataGridView2.Rows[rownum].Cells[6].Value = DBNull.Value;
             dataGridView2.Rows[rownum].Cells[7].Value = 0;
             dataGridView2.Rows[rownum].Cells[8].Value = 0;
             dataGridView2.Rows[rownum].Cells[9].Value = 0;
@@ -1644,7 +1644,7 @@ namespace Traverse_Returns_Addon
             strSql = "Update tblInPRPReturnsDetail Set SubTotal = @SubTotal where ReturnAuthNum = @ReturnAuthNum";
             SqlCommand UpdateSubTotal = new SqlCommand(strSql, conn);
 
-            UpdateSubTotal.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = txtSubTotal.Text;
+            UpdateSubTotal.Parameters.Add("@SubTotal", SqlDbType.Decimal).Value = Decimal.Parse(txtSubTotal.Text);
             UpdateSubTotal.Parameters.Add("@ReturnAuthNum", SqlDbType.VarChar, 8).Value = cboReturnAuthNum.Text;
 
             UpdateSubTotal.ExecuteNonQuery();
