@@ -1202,6 +1202,7 @@ namespace Traverse_Returns_Addon
             this.txtSubTotal.Name = "txtSubTotal";
             this.txtSubTotal.Size = new System.Drawing.Size(71, 20);
             this.txtSubTotal.TabIndex = 66;
+            this.txtSubTotal.Visible = false;
             // 
             // txtRcvdBy
             // 
